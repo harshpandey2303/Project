@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klinik project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+
+<style>
+    * {
+        margin: 00px;
+        padding: 00px;
+    }
+
+    .text-hov:hover {
+        color: blue;
+    }
+
+    .col-sm-3:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .col-md-3:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .sec-img1 {
+        border-radius: 10px;
+        margin-left: 150px;
+        position: absolute;
+        height: 500px;
+    }
+
+    .sec-img2 {
+        border-radius: 10px;
+        width: 250px;
+        position: relative;
+        margin-top: 320px;
+        margin-left: 30px;
+    }
+
+    .sec-6main {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        background-color: white
+    }
+
+    .sec-6div-1 {
+        margin-top: 15px;
+        width: 55%;
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width :767px) {
+        .sec-img1 {
+            border-radius: 10px;
+            margin-left: 0px;
+            width: 95%;
+            position: absolute;
+            height: auto
+        }
+
+        .sec-img2 {
+            border-radius: 10px;
+            width: 150px;
+            position: relative;
+            margin-top: 220px;
+            margin-left: 00px;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- section 1 header -->
+    <!-- section 1 -->
+    <nav class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <p class="fa fa-map-marker-alt text-primary me-2"></p>
+                    <p>12345 Street, New York, USA</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <p class="far fa-clock text-primary me-2"></p>
+                    <p>Mon - Fri : 01.00 AM - 05.00 PM</p>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <p class="fa-solid fa-phone fa-xxl me-2" style="color: #2967d1;"></p>
+                    <p>+012 345 67890</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle btn btn-light text-primary me-1" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle btn btn-light text-primary me-1" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle btn btn-light text-primary me-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle btn btn-light text-primary me-0" href=""><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section 2 -->
+    <nav class="navbar navbar-expand-sm bg-white navbar-light sticky-top ">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>Klinik</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+    </nav>
+
+    <!-- section-3 -->
+
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="col-sm-6 bg-primary text-light">
+                <div class="p-4">
+                    <h1 style="font-size:60px ; padding: 30px;">Good Health Is The <br>
+                        Root Of All <br>
+                        Heppiness</h1>
+                </div>
+                <br>
+                <div class="row p-4">
+                    <div class="col-sm-4 border-start">
+                        <h2>123</h2>
+                        <p>Expert Doctors</p>
+                    </div>
+                    <div class="col-sm-4 border-start ">
+                        <h2>123</h2>
+                        <p>Medical Stuff</p>
+                    </div>
+                    <div class="col-sm-4 border-start ">
+                        <h2>123</h2>
+                        <p>Total Patients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="carousel-1.jpg" width="100%" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    / <!-- section-4 -->
+    <div class="container-fluid">
+        <div class="row  d-flex ">
+            <div class="col-sm-6 mt-5">
+                <img class="sec-img1" src="about-1.jpg" alt="">
+                <img class="sec-img2" src="about-2.jpg" alt="">
+            </div>
+            <div class="col-sm-6 mt-5 ">
+                <button class="d-inline-block border rounded-pill py-1 px-4">About Us</button>
+                <br>
+                <br>
+                <b>
+                    <h1 style="font-size:45px ;">Why You Should Trust Us? <br>Get Know About Us!</h1>
+                </b>
+                <br>
+                <p style="font-size:18px ;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam <br>
+                    amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit <br>
+                    clita duo justo magna dolore erat amet
+                    <br>
+                    <br>
+                    Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est <br>
+                    diam rebum amet diam ipsum.Clita clita labore, dolor duo nonumy clita sit <br>
+                    at, sed sit sanctus dolor eos.
+                </p>
+                <br>
+                <p style="font-size:18px ;">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Quality health care
+                </p>
+
+                <p style="font-size:18px ;">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Only Qualified Doctors
+                </p>
+                <p style="font-size:18px ;">
+                    <i class="far fa-check-circle text-primary me-3"></i>
+                    Medical Research Professionals
+                </p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <button style="border-radius: 25px ; width: 190px;" type="button" class="btn btn-primary p-2 ms-4">
+        <h5>Read More</h5>
+    </button>
+    <br>
+    <br>
+    <!-- sectoin-5 -->
+    <div class="container-fluid">
+        <div class="row">
+            <center>
+                <div class="col-sm-12 ">
+                    <button style="border-radius: 25px ; width: 130px;" type="button" class="btn btn-light p-2">
+                        <h5>Sarvice</h5>
+                    </button>
+                    <br>
+                    <br>
+                    <h1>Health Care Solutions</h1>
+                </div>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- sectoin-6 -->
+
+    <div class="container">
+        <div class="row  d-flex " style="gap: 120px;">
+            <div class="col-sm-3 rounded ">
+                <div class="bg-light  align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-heartbeat text-primary fs-4"></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Cardiology</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn ms-3" href="https://www.free-css.com/free-css-templates"><i
+                            class="fa fa-plus text-primary me-3"></i>Read More</a>
+                </div>
+            </div>
+
+            <div class="col-sm-3 rounded ">
+                <div class="bg-light  align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-heartbeat text-primary fs-4"></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Pulmonary</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn" href="https://www.free-css.com/free-css-templates">
+                        <i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-3 rounded ">
+                <div class="bg-light align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-heartbeat text-primary fs-4"></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Neurology</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn ms-3" href="https://www.free-css.com/free-css-templates"><i
+                            class="fa fa-plus text-primary me-3"></i>Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- sectoin-7 -->
+
+    <div class="container">
+        <div class="row  d-flex " style="gap: 120px;">
+            <div class="col-sm-3 rounded ">
+                <div class="bg-light align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-wheelchair text-primary fs-4"></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Orthopedics</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn ms-3" href="https://www.free-css.com/free-css-templates"><i
+                            class="fa fa-plus text-primary me-3"></i>Read More</a>
+                </div>
+            </div>
+
+            <div class="col-sm-3 rounded ">
+                <div class="bg-light  align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-tooth text-primary fs-4"></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Dental Surgery</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn" href="https://www.free-css.com/free-css-templates">
+                        <i class="fa fa-plus text-primary me-3"></i></i>Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-3 rounded">
+                <div class="bg-light align-items-center justify-cantent-center rounded "
+                    style="height:350px ; width: 350px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle m-4"
+                        style="width:65px;height:65px;"><i class="fa fa-vials text-primary fs-4"></i></i></div>
+                    <div class="m-2">
+                        <h4 class="text-body ms-4">Laboratory</h4>
+                        <p class="ms-4">Erat ipsum justo amet duo et elitr dolor, est
+                            <br> duo eos lorem sed diam stet diam sed stet.
+                        </p>
+                    </div>
+                    <a class="btn ms-3" href="https://www.free-css.com/free-css-templates"><i
+                            class="fa fa-plus text-primary me-3"></i>Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- section-8 -->
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="col-sm-6 bg-primary text-light">
+                <div class="p-4">
+                    <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                    <h1 style="font-size:55px ; padding: 10px;">Why Choose Us</h1>
+                    <p class="text-white mb-4 pb-2">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu <br>
+                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet <br>
+                        lorem sit clita duo justo erat amet</p>
+                </div>
+                <br>
+                <div class="row g-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                style="width:55px;height:55px;"><i class="fa fa-user-md text-primary"></i></div>
+                            <div class="ms-4">
+                                <p class="text-white mb-2">Experience</p>
+                                <h5 class="text-white mb-0">Doctors</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                style="width:55px;height:55px;"><i class="fa fa-check text-primary"></i></div>
+                            <div class="ms-4">
+                                <p class="text-white mb-2">Quality</p>
+                                <h5 class="text-white mb-0">Services</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                style="width:55px;height:55px;"><i class="fa fa-comment-medical text-primary"></i></div>
+                            <div class="ms-4">
+                                <p class="text-white mb-2">Positive</p>
+                                <h5 class="text-white mb-0">Consultation</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                style="width:55px;height:55px;"><i class="fa fa-headphones text-primary"></i></div>
+                            <div class="ms-4">
+                                <p class="text-white mb-2">24 Hours</p>
+                                <h5 class="text-white mb-0">Support</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="feature.jpg" height="500px" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <!-- sectoin-9 -->
+    <div class="container-fluid">
+        <div class="row">
+            <center>
+                <div class="col-sm-12 ">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+                    <br>
+                    <h1>Our Experience Doctors</h1>
+                </div>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <!-- sectoin-10 -->
+
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-3">
+                <div class="team-item position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden"><img class="img-fluid" src="team-1.jpg" alt="">
+                    </div>
+                    <div class=" bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class=" text-center"><a class="btn btn-square" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a> <a
+                                class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class=" position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden"><img class="img-fluid" src="team-2.jpg" alt="">
+                    </div>
+                    <div class=" bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class=" text-center"><a class="btn btn-square" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a> <a
+                                class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class=" position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden"><img class="img-fluid" src="team-3.jpg" alt="">
+                    </div>
+                    <div class=" bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class=" text-center"><a class="btn btn-square" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a> <a
+                                class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class=" position-relative rounded overflow-hidden">
+                    <div class="overflow-hidden"><img class="img-fluid" src="team-4.jpg" alt="">
+                    </div>
+                    <div class=" bg-light text-center p-4">
+                        <h5>Doctor Name</h5>
+                        <p class="text-primary">Department</p>
+                        <div class=" text-center"><a class="btn btn-square"
+                                href="https://www.free-css.com/free-css-templates"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a> <a
+                                class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- section-11 -->
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-6">
+                <div>
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
+                    <h1 style="font-size:45px ; padding: 10px;">
+                        Make An Appointment To<br> Visit Our Doctor
+                    </h1>
+                    <p class="text-dark mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                        diam <br>
+                        amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit <br>
+                        clita duo justo magna dolore erat amet</p>
+                </div>
+
+                <div>
+                    <div class="bg-light rounded m-3">
+                        <div class="d-flex m-5 p-4">
+                            <div class="d-flex m-2 p-2 flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                                style="width:55px;height:55px;"> <i class="fa-solid fa-phone fa-xxl"
+                                    style="color: #2967d1;"></i>
+                            </div>
+                            <div>
+                                <p>Call Us Now</p>
+                                <h4>+012345 6789</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded">
+                        <div class="d-flex m-5 p-4">
+                            <div class="d-flex m-2  p-2 align-items-center justify-content-center rounded-circle bg-white"
+                                style="width:55px;height:55px;"><i class="fa-regular fa-envelope-open fa-xl"
+                                    style="color: #2967d1;"></i>
+                            </div>
+                            <div>
+                                <p>Mail Us Now</p>
+                                <h4>abcd@domain.com</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 mt-1">
+                <div class="row bg-light align-items-center" style="margin-top:0px  ; gap: 50px;">
+                    <div class=" row d-flex" style="margin-top:30px ;">
+                        <div class="col-sm-6 ">
+                            <input class="rounded border-0 p-4 m-3" type="text " placeholder="Your Name "
+                                style="height: 35px; width: 270px ;">
+                        </div>
+                        <div class=" col-sm-6"> <input class="rounded border-0 p-4 m-3" type="text "
+                                placeholder="Your Email " style="height: 35px; width:270px ;">
+                        </div>
+                    </div>
+                    <div class=" row d-flex ">
+                        <div class=" col-sm-6 ">
+                            <input class="rounded border-0 p-4 m-3" type="text " placeholder="Your Mobile "
+                                style="height: 35px; width: 270px ;">
+                        </div>
+                        <div class=" col-sm-6 text-dark">
+                            <div class="col-12 col-sm-6">
+                                <select class="border-0" style="height:45px; width: 270px;">
+                                    <option selected="#">Choose Doctor</option>
+                                    <option>Doctor 1</option>
+                                    <option>Doctor 2</option>
+                                    <option>Doctor 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row d-flex ">
+                        <div class=" col-sm-6 ">
+                            <input class="rounded border-0 p-4 m-3" type="text " placeholder="01/01/2024"
+                                style="height: 35px; width: 270px ;">
+                        </div>
+                        <div class=" col-sm-6"> <input class="rounded border-0 p-4 m-3" type="text "
+                                placeholder="09:45.Am   " style="height: 35px; width: 270px ;">
+
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 ">
+                        <div class=" col-sm-12 ">
+                            <input class="rounded border-0 p-4 ms-3" type="text " placeholder="Describe Your Problem"
+                                style="height: 115px; width:88% ;">
+                        </div>
+                    </div>
+                    <div class="d-flex ms-2 ">
+                        <div class=" col-sm-12 ">
+                            <button class="btn btn-primary w-100 p-3" type="submit"> Book Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- sectoin-12 -->
+    <div class="container-fluid">
+        <div class="row">
+            <center>
+                <div class="col-sm-12 ">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
+                    <br>
+                    <h1>What Say Our Patients!</h1>
+                </div>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- footer -->
+    <!-- sectoin-14 -->
+    <div class=" container-fluid">
+        <div class=" row bg-dark d-flex">
+            <div class="col-sm-3 ">
+                <div class="m-5 text-white">
+                    <h4 class="mb-4">Address</h4>
+                    <div class=" d-inline-flex align-items-center " style="gap:20px ;">
+                        <i class="fa fa-map-marker-alt fa-xl text-white"></i>
+                        <p>12345 Street, New York, USA</p>
+                    </div>
+                    <div class=" d-inline-flex align-items-center " style="gap:20px ;">
+                        <i class="fa-solid fa-phone fa-xl" style="color: #f2f2f2;"></i>
+                        <p>+012 345 67890</p>
+                    </div>
+                    <div class="d-inline-flex align-items-center" style="gap:20px ;">
+                        <i class="fa-regular fa-envelope fa-xl" style="color: #eceff3;"></i>
+                        <p>name@domain.com</p>
+
+                    </div>
+
+                    <div class=" mt-3 d-inline-flex align-items-center">
+                        <a class="btn btn-sm-square rounded-circle btn btn-light text-pwtext-white me-1" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square rounded-circle btn btn-light text-pwtext-white me-1" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square rounded-circle btn btn-light text-pwtext-white me-1" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-sm-square rounded-circle btn btn-light text-pwtext-white me-0" href=""><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-3 ">
+                <div class="mt-5 text-white">
+                    <h4 class="mb-4">Services</h4>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov">Cardiology</p>
+                    </div>
+
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Pulmonary</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Neurology</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov">Orthopedics</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Laboratory</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="mt-5 text-white">
+                    <h4 class="mb-4">Services</h4>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">About Us</p>
+                    </div>
+
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Contact Us</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov "> Our Sarvice</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Terms& Conditions</p>
+                    </div>
+                    <div class="d-flex gap-2 ">
+                        <i class="fa-solid fa-chevron-right fa-" style="color: #f7f7f7;"> </i>
+                        <p class="text-hov ">Support</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-3 ">
+                <div class="mt-5 text-white">
+                    <h4 class="mb-4">Newsletter</h4>
+                    <h5> Dolor amet sit justo amet elitr <br> clita ipsum elitr est.</h5>
+                </div>
+                <div>
+                    <input type="text" class="rounded border-0 p-4" placeholder="Your Email"
+                        style="position: absolute;">
+                    <button type="button" class="btn btn-primary p-2"
+                        style="position: relative; margin-left:140px; margin-top:10px ; ">SING IN</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
